@@ -1,0 +1,51 @@
+site_name: Neural ODE on a Double Pendulum
+site_description: Learning chaotic dynamics with Neural ODEs — curriculum training, honest baselines, and closed-loop MPC on a double pendulum.
+site_url: https://varick.github.io/neural-ode-double-pendulum/
+repo_url: https://github.com/varick/neural-ode-double-pendulum
+
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
+
+nav:
+  - Home: index.md
+  - Blog:
+      - 01. From FEM to neural dynamics — a migration story: 01-migration-story.md
+      - 02. Learning chaotic dynamics with NODE: 02-node-double-pendulum.md
+      - 03. Model predictive control with a learned model: 03-mpc.md
