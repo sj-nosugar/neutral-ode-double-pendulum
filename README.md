@@ -6,7 +6,7 @@ A complete, reproducible pipeline on the canonical chaotic system: **physics →
 
 ## Blog
 
-Full write-up: **[https://varick.github.io/neural-ode-double-pendulum/](https://varick.github.io/neural-ode-double-pendulum/)**
+Full write-up: **[https://sj-nosugar.github.io/neutral-ode-double-pendulum/](https://sj-nosugar.github.io/neutral-ode-double-pendulum/)**
 
 1. From FEM to neural dynamics — a migration story (incl. why we falsified PINN before committing to data-driven)
 2. Learning chaotic dynamics with NODE — curriculum learning + honest linear baseline
@@ -39,6 +39,8 @@ python compare_linear_vs_node.py --horizon 50 --no-oracle
 - Short-horizon NODE ≈ linear model (and 200× slower) → **no value there**
 - Long-horizon (H≥20) NODE beats linear by 17-25% → value is nonlinearity at scale
 - Closed-loop MPC works with the learned model (oracle gap measured)
+
+![Closed-loop MPC with the learned NODE model (θ₁/θ₂ tracking, ω₁, τ₁ control effort)](experiments/mpc_results.png)
 
 ## Structure
 

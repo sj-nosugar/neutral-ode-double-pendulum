@@ -1,6 +1,6 @@
 site_name: Neural ODE on a Double Pendulum
 site_description: Learning chaotic dynamics with Neural ODEs — curriculum training, honest baselines, and closed-loop MPC on a double pendulum.
-site_url: https://varick.github.io/neural-ode-double-pendulum/
+site_url: https://sj-nosugar.github.io/neutral-ode-double-pendulum/
 repo_url: https://github.com/varick/neural-ode-double-pendulum
 
 theme:
